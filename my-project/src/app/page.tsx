@@ -187,7 +187,7 @@ export default function Page() {
           priority
       
         />
-        <div className='absolute top-[25%] left-[10%] z-10 flex flex-col text-white font-extrabold  text-4xl'>
+        <div className='absolute top-[25%] left-[10%] z-10 flex flex-col text-red-400 font-extrabold  text-5xl'>
           <p>Contact Us</p>
         </div>
         
@@ -195,8 +195,8 @@ export default function Page() {
       </div>
       <br />  
       <div className='bg-white text-orange-300 text-3xl font-light w-1/2 ml-96'>
-        <p className='text-balck font-unbounded ml-96'>Contact US </p> <br />
-        <h1 className='text-black text-center text-xl'>Please fill out the form below and one of our school representatives will contact you soon.
+        <p className='text-red-950 font-unbounded ml-96'>Contact US </p> <br />
+        <h1 className='text-shadow-yellow-100 text-center text-xl'>Please fill out the form below and one of our school representatives will contact you soon.
         </h1>
       </div>
      
