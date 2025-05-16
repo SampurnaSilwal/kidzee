@@ -14,7 +14,7 @@ const images = [
 export default function ImageMarquee() {
   return (
     <>
-      <div className="w-full bg-white py-6 text-3xl font-unbounded text-purple-900 px-6">
+      <div className="w-full bg-fuchsia-50 py-6 text-3xl font-unbounded text-purple-900 px-6 text-center">
         HIGHLIGHTING OUR SCHOOLS AWARDS – KIDZEE MONTESSORI
       </div>
 
@@ -34,6 +34,7 @@ export default function ImageMarquee() {
           </p><br /><br />
           <br />
           <p className='font-open-sans text-red-700 text-lg leading-relaxed'>The Hampton Roads area, which includes the Naval Station Norfolk, has one of the largest military populations in the world, with over 46,000 active-duty military. We embrace our military families, even though this can be seen as a challenge in a Montessori school, where we want families committed to Montessori for more than a few years. We believe that the children of our military families, who must move often, benefit from Montessori education. When so much in these children’s lives change with a move, it is nice for them to transfer to another Montessori school where their education will stay somewhat the same. We take the challenge and embrace it because it benefits these children.</p>
+        
         </div>
 
         {/* Right: Image */}
@@ -44,10 +45,10 @@ export default function ImageMarquee() {
             className="rounded-2xl shadow-xl w-full object-cover"
           />
         </div>
-      </div>
-      <p className='font-unbounded text-3xl text-shadow-red-300 pl-140'>
+      </div> <br />
+      <p className='font-unbounded text-3xl text-shadow-red-300 pl-140 bg-fuchsia-50'>
         Nepal's Most Recognized School for <br />
-        <br /><button className="bg-light hover:bg-yellow-300 text-black font-unbounded px-6 py-2 rounded-xl shadow-md transition">
+        <br /><button className="bg-light hover:bg-yellow-300 text-black font-unbounded px-6 py-2 rounded-xl shadow-md transition ml-12">
    2021 </button>
    <button className="bg-light hover:bg-yellow-300 text-black font-unbounded px-6 py-2 rounded-xl shadow-md transition">
    2022
@@ -57,15 +58,16 @@ export default function ImageMarquee() {
       </p>
 
       {/* Marquee Section */}
-      <div className="w-full bg-white py-6">
-        <Marquee speed={60} pauseOnHover gradient={false}>
+      <div className="w-full bg-fuchsia-50 py-6">
+        <Marquee speed={160} pauseOnHover gradient={false}>
           {images.map((src, index) => (
             <div key={index} className="mx-6">
               <img
                 src={src}
                 alt={`Marquee Image ${index + 1}`}
-                className="h-32 w-auto rounded-xl shadow-md object-cover"
+                className="h-32 w-auto rounded-xl shadow-md object-cover "
               />
+              <br /> <br />
             </div>
           ))}
         </Marquee>

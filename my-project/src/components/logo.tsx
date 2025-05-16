@@ -1,4 +1,3 @@
-// components/Logo.tsx
 "use client";
 
 import Link from "next/link";
@@ -7,12 +6,12 @@ import Image from "next/image";
 export default function Logo() {
   return (
     <Link href="/" passHref>
-      <div className="flex items-center cursor-pointer ml-186">
+      <div className="flex items-center cursor-pointer">
         <Image
-          src="/newlogo.png" // Make sure the logo is inside your public/ directory
+          src="/newlogo.png"
           alt="Logo"
-          width={150}
-          height={50}
+          width={250} 
+          height={150}
           priority
         />
       </div>

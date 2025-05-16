@@ -19,7 +19,7 @@ export default function ProgrammesPage() {
   }, []);
 
   return (
-    <div className="text-center p-4">
+    <div className="text-center p-4 bg-fuchsia-50">
       <Image
         src={images[selectedImage]}
         width={410}
@@ -28,7 +28,7 @@ export default function ProgrammesPage() {
         className="rounded-xl shadow-lg mx-auto"
       />
 
-      <div className="mt-4 flex flex-col items-center gap-4">
+      <div className="mt-4 flex flex-col items-center gap-4 bg-fuchsia-50">
         <div className="flex gap-4">
           <button
             onClick={() =>
@@ -70,7 +70,7 @@ export default function ProgrammesPage() {
         </h4>
 
         {/* Two-column section */}
-        <div className="flex flex-col md:flex-row justify-between gap-12 px-4 w-full mt-6">
+        <div className="flex flex-col md:flex-row justify-between gap-12 px-4 w-full mt-6  bg-fuchsia-50">
           {/* Left Column */}
           <div className="md:w-1/2 mr-200">
             <p className="text-2xl font-semibold mb-2">Key Areas In Playgroup Curriculum</p>

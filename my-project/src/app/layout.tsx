@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import "@/styles/globals.css";
 
 
+
 const unbounded = Unbounded({
   subsets: ["latin"],
   variable: "--font-unbounded"
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${unbounded.variable} ${openSans.variable}`}>
         <Header />
+       
         {children}
       </body>
     </html>

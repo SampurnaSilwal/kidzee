@@ -1,12 +1,10 @@
 "use client";
-import { Button } from "./ui/Button";
-import Wrapper from "./wrapper";
+
+import { useState } from "react";
+import Logo from "./logo";
 import Navigation from "./navigation";
 import MobileMenuToggle from "./MobileMenuToggle";
-import Logo from "./logo";
-import { useState } from "react";
-import { LucideSquareArrowOutDownLeft, Scale3D } from "lucide-react";
-import { Devonshire } from "next/font/google";
+import Wrapper from "./wrapper";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,20 +13,22 @@ export default function Header() {
     setMenuOpen((prev) => !prev);
   };
 
-
   return (
-    <header className="py-5 border-b border-dark">
-      <Wrapper>
-        <div className="flex justify-between md:items-center flex-wrap items-end gap-6">
-          <Logo />
-          
-          <Navigation />
-          <MobileMenuToggle onToggle={toggleMenu}>
-            
-          </MobileMenuToggle>
-          
-        </div>
-      </Wrapper>
-    </header>
-  );
+    <header className="py-4 border-b border-fuchsia-50 bg-yellow-50">
+      
+  <Wrapper>
+    <div className="flex items-center justify-between flex-wrap gap-6 mr-36 ">
+      {/* Logo on the left */}
+      <Logo />
+
+      {/* Navigation on the right */}
+      <Navigation />
+      
+      {/* Mobile menu toggle */}
+      <MobileMenuToggle onToggle={toggleMenu} />
+    </div>
+  </Wrapper>
+</header>
+  );  
 }
+
