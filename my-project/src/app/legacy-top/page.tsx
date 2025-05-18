@@ -8,9 +8,9 @@ export default function LegacySection() {
         <div className="flex flex-col md:flex-row items-center gap-10">
         
           <div className="md:w-1/2">
-            <h2 className="text-4xl font-bold mb-30 ml-100 absolute top-1/3">Legacy</h2>
-            <h3 className="text-2xl font-semibold mb-4 pl-92 ">Kidzee Preschool</h3>
-            <p className="text-lg leading-relaxed pl-12">
+            <h2 className="text-4xl font-bold mb-30 ml-100 absolute top-1/5 font-unbounded text-gray-800 ">Legacy</h2> <br />
+            <p className="text-2xl font-semibold mb-4 pl-92  absolute top-1/3 font-unbounded ">Kidzee Preschool</p> <br /> <br /> <br />
+            <p className="text-2xl leading-relaxed pl-12 ">
               We believe that there is ‘unique potential’ in every child; and Kidzee nurtures it.
               Touted to be one of the best preschools in India, we nurture and shape minds with the help
               of our best-in-class age appropriate progressive curriculum.

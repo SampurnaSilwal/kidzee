@@ -4,6 +4,14 @@ import ScrollNav from '@/components/ScrollNav';
 import Marquee from 'react-fast-marquee';
 import { GrInstagram } from "react-icons/gr";
 import { motion } from "framer-motion";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+
+
+
+
 
 const MyComponent = ({ isVisible }: { isVisible: boolean }) => {
   return isVisible ? <div>Visible</div> : null;
@@ -190,15 +198,13 @@ export default function Page() {
         <section id="section3" className="min-h-screen bg-fuchsia-50">
           <div className="relative w-full h-[600px]">
             <Image
-              src="/contact.jpg"
-              alt="Contact"
+              src="/contact111.png"
+              alt="contact"
               fill
               className="object-cover rounded-xl"
               priority
             />
-            <div className="absolute top-[25%] left-[10%] z-10 flex flex-col text-red-400 font-extrabold text-5xl">
-              <p>Contact Us</p>
-            </div>
+            
           </div>
 
           <div className="bg-white text-orange-300 text-3xl font-light w-full md:w-1/2 mx-auto mt-10 p-6 rounded-xl shadow-lg">
@@ -220,7 +226,7 @@ export default function Page() {
         </section>
 
         <br /> <br />
-        <div className="w-full h-px bg-rato mb-4"></div> <br />
+        <div className="w-full h-px bg-rato mb-4"></div> 
         <div className='px-8 '>
           <div className="flex justify-between items-center relative h-[200px]">
             <Image
@@ -230,16 +236,90 @@ export default function Page() {
               height={300}
               width={300}
               priority
-            /> 
-            <div className="flex items-center gap-4  mt-6">
-              <h1 className="mt-6  text-xl font-open-sans text-gray-800 text-left "><br /> <br /> <br />
-                Zee Learning Limited
-                <p>135, Continental Building,B wing, Worli, </p>
-                <p>Mumbai,Maharashtra 400 018.</p>
-                <p>Dhumbarahi,Kathmandu 4</p>
-              </h1>
-              <GrInstagram className="w-10 h-10 ml-52 " />
-            </div>
+            />  
+            <div className="flex items-start justify-between  gap-40  mt-6">
+  <div className="pt-10 text-left"> <br />
+    <h1 className="text-xl font-open-sans text-gray-800 ">Zee Learning Limited</h1>
+    <p>135, Continental Building, B wing, Worli,</p>
+    <p>Dhumbarahi, Kathmandu 4</p>
+    <p>Mumbai, Maharashtra 400 018</p>
+  </div>  
+  <div className="flex flex-col gap-4">
+  <div className="flex items-center gap-2">
+    <MdOutlineMailOutline className="w-7 h-7 text-blue-600" />
+    <span className='font-serif'>Email</span>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <GrInstagram className="w-7 h-7 text-pink-600" />
+    <span className='font-serif'>Instagram</span>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <FaFacebookF className="w-7 h-7 text-blue-700" />
+    <span className='font-serif'>Facebook</span>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <FaLinkedinIn className="w-7 h-7 text-blue-500" />
+    <span className='font-serif'>LinkedIn</span>
+  </div>
+</div>
+  
+<div className='flex flex-col gap-4'>
+<p className='text-xl font-unbounded'>Contact Details</p>
+    <div className='flex items-center gap-2'>
+     
+    <FaLocationDot className='flex items-center gap-2 w-7 h-7 text-blue-500' />
+    <span>MKW Elementary</span>
+    
+    </div>
+    <div className='flex items-center gap-2'>
+    <FaLocationDot className='flex items-center gap-2 w-7 h-7 text-blue-500' />
+    <span className='font-serif'>MKW Baneshwor Height</span>
+</div>
+<div className='flex items-center gap-2'>
+    <FaLocationDot className='flex items-center gap-2 w-7 h-7 text-blue-500' />
+    <span className='font-serif'>MKW Jhamsikhel</span>
+</div>
+<div className='flex items-center gap-2'>
+    <FaLocationDot className='flex items-center gap-2 w-7 h-7 text-blue-500' />
+    <span className='font-serif'>MKW Tahachal</span>
+</div>
+
+    
+    </div>
+    
+    <div>
+      <p className='text-xl font-unbounded'>SUBSCRIBE</p>
+      <br />
+      <form>
+        <input type="text" placeholder="Email" className="w-100 px-2  border border-purple-400 text-black outline-none text-l font-unbounded" />
+        <button type="submit" className="w-1/4 mt-4 bg-gray-700 hover:bg-green-700 text-white font-semibold py-3  text-l font-unbounded m-0 ml-12"> I Am In!</button>
+        <br /> <br />    
+        <div className="flex items-center space-x-2">
+          
+        <div className="w-full flex justify-end mr-36">
+  <div className='flex items-centre gap-2'>
+    <input
+      type="checkbox"
+      id="agree"
+      className="w-4 h-4 text-pink-500 border-gray-300 rounded focus:ring-pink-400"
+    />
+    <label htmlFor="agree" className="text-sm text-gray-700 font-open-sans">
+      I agree to the terms and conditions
+    </label>
+  </div>
+</div>
+
+  
+</div>
+
+      </form>
+    </div>
+  
+</div>
+
           </div>
         </div>
       </section>

@@ -14,12 +14,12 @@ const Login = () => {
         />
         <div className="absolute top-[25%] left-[10%] z-10 flex flex-col text-white">
           <h1 className="text-2xl font-bold my-4">Turn ideas into reality</h1>
-          <p className="text-xl font-normal">This is the admission page for the kids</p>
+         
         </div>
       </div>
 
 
-      <div className="w-1/2 h-full bg-blue-200 flex flex-col p-20 justify-center">
+      <div className="w-1/2 h-full bg-fuchsia-50 flex flex-col p-20 justify-center">
         <h1 className="text-2xl text-black mb-8">Apply for Admission Now</h1>
 
         <div className="w-full flex flex-col mb-8">

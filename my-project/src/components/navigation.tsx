@@ -46,9 +46,9 @@ const routes: Route[] = [
     subRoutes: [{ name: "Apply Now", href: "/admission" }],
   },
   {
-    name: "Franchise Opportunity",
-    href: "#FranchiseOpportunity",
-    subRoutes: [{ name: "Become a Partner", href: "#partner" }],
+    name: "Our Branches",
+    href: "#section4",
+    subRoutes: [{ name: "Find Us", href: "#section4" }],
   },
 ];
 

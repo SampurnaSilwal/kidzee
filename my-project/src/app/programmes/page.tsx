@@ -6,6 +6,7 @@ import program from "../../../public/sliding-images/program.jpeg";
 import program2 from "../../../public/sliding-images/program2.jpeg";
 import program3 from "../../../public/sliding-images/program3.jpeg";
 import program4 from "../../../public/sliding-images/program4.jpeg";
+import { div } from 'motion/react-client';
 
 export default function ProgrammesPage() {
   const images = [program, program2, program3, program4];
@@ -19,7 +20,8 @@ export default function ProgrammesPage() {
   }, []);
 
   return (
-    <div className="text-center p-4 bg-fuchsia-50">
+  <div className='bg-fuchsia-50'>
+    <div className="text-center p-4 ">
       <Image
         src={images[selectedImage]}
         width={410}
@@ -28,7 +30,7 @@ export default function ProgrammesPage() {
         className="rounded-xl shadow-lg mx-auto"
       />
 
-      <div className="mt-4 flex flex-col items-center gap-4 bg-fuchsia-50">
+      <div className="mt-4 flex flex-col items-center gap-4">
         <div className="flex gap-4">
           <button
             onClick={() =>
@@ -87,7 +89,7 @@ export default function ProgrammesPage() {
           <div className="md:w-1/2 text-left">
             <p className="text-2xl font-semibold mb-2">Kidzee Sessions
             </p>
-            <ul className="list-disc list-inside text-gray-700 ml-4">
+            <ul className="list-disc list-inside text-gray-700 ml-4 bg-fuchsia-50">
               <li>Circle Time
               </li>
               <li>Free Play
@@ -101,5 +103,8 @@ export default function ProgrammesPage() {
         </div>
       </div>
     </div>
+  </div>
+
+    
   );
 }
