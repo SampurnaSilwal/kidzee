@@ -2,12 +2,8 @@
 import Image from 'next/image';
 import ScrollNav from '@/components/ScrollNav';
 import Marquee from 'react-fast-marquee';
-import { GrInstagram } from "react-icons/gr";
 import { motion } from "framer-motion";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaLocationDot } from "react-icons/fa6";
+
 
 
 
@@ -124,13 +120,13 @@ export default function Page() {
 
         <div className="text-4xl text-blue-950 font-semibold mb-10 font-serif">Founder Director</div>
 
-        {/* ✅ Motion Added Here */}
+        
         <motion.div
           className="flex flex-row items-center justify-center"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
+          transition={{ duration: 0.3, ease: 'easeOut' }}
         >
           <Image
             src="/mam.jpg"
@@ -198,7 +194,7 @@ export default function Page() {
         <section id="section3" className="min-h-screen bg-fuchsia-50">
           <div className="relative w-full h-[600px]">
             <Image
-              src="/contact111.png"
+              src="/hawa.png"
               alt="contact"
               fill
               className="object-cover rounded-xl"
@@ -226,102 +222,7 @@ export default function Page() {
         </section>
 
         <br /> <br />
-        <div className="w-full h-px bg-rato mb-4"></div> 
-        <div className='px-8 '>
-          <div className="flex justify-between items-center relative h-[200px]">
-            <Image
-              src="/newlogo.png"
-              alt="logo"  
-              className="rounded-xl absolute -top-1/6 "
-              height={300}
-              width={300}
-              priority
-            />  
-            <div className="flex items-start justify-between  gap-40  mt-6">
-  <div className="pt-10 text-left"> <br />
-    <h1 className="text-xl font-open-sans text-gray-800 ">Zee Learning Limited</h1>
-    <p>135, Continental Building, B wing, Worli,</p>
-    <p>Dhumbarahi, Kathmandu 4</p>
-    <p>Mumbai, Maharashtra 400 018</p>
-  </div>  
-  <div className="flex flex-col gap-4">
-  <div className="flex items-center gap-2">
-    <MdOutlineMailOutline className="w-7 h-7 text-blue-600" />
-    <span className='font-serif'>Email</span>
-  </div>
-
-  <div className="flex items-center gap-2">
-    <GrInstagram className="w-7 h-7 text-pink-600" />
-    <span className='font-serif'>Instagram</span>
-  </div>
-
-  <div className="flex items-center gap-2">
-    <FaFacebookF className="w-7 h-7 text-blue-700" />
-    <span className='font-serif'>Facebook</span>
-  </div>
-
-  <div className="flex items-center gap-2">
-    <FaLinkedinIn className="w-7 h-7 text-blue-500" />
-    <span className='font-serif'>LinkedIn</span>
-  </div>
-</div>
-  
-<div className='flex flex-col gap-4'>
-<p className='text-xl font-unbounded'>Contact Details</p>
-    <div className='flex items-center gap-2'>
-     
-    <FaLocationDot className='flex items-center gap-2 w-7 h-7 text-blue-500' />
-    <span>MKW Elementary</span>
-    
-    </div>
-    <div className='flex items-center gap-2'>
-    <FaLocationDot className='flex items-center gap-2 w-7 h-7 text-blue-500' />
-    <span className='font-serif'>MKW Baneshwor Height</span>
-</div>
-<div className='flex items-center gap-2'>
-    <FaLocationDot className='flex items-center gap-2 w-7 h-7 text-blue-500' />
-    <span className='font-serif'>MKW Jhamsikhel</span>
-</div>
-<div className='flex items-center gap-2'>
-    <FaLocationDot className='flex items-center gap-2 w-7 h-7 text-blue-500' />
-    <span className='font-serif'>MKW Tahachal</span>
-</div>
-
-    
-    </div>
-    
-    <div>
-      <p className='text-xl font-unbounded'>SUBSCRIBE</p>
-      <br />
-      <form>
-        <input type="text" placeholder="Email" className="w-100 px-2  border border-purple-400 text-black outline-none text-l font-unbounded" />
-        <button type="submit" className="w-1/4 mt-4 bg-gray-700 hover:bg-green-700 text-white font-semibold py-3  text-l font-unbounded m-0 ml-12"> I Am In!</button>
-        <br /> <br />    
-        <div className="flex items-center space-x-2">
-          
-        <div className="w-full flex justify-end mr-36">
-  <div className='flex items-centre gap-2'>
-    <input
-      type="checkbox"
-      id="agree"
-      className="w-4 h-4 text-pink-500 border-gray-300 rounded focus:ring-pink-400"
-    />
-    <label htmlFor="agree" className="text-sm text-gray-700 font-open-sans">
-      I agree to the terms and conditions
-    </label>
-  </div>
-</div>
-
-  
-</div>
-
-      </form>
-    </div>
-  
-</div>
-
-          </div>
-        </div>
+        <div className="w-full h-px bg-black mb-4"></div> 
       </section>
     </div>
   );
