@@ -47,8 +47,8 @@ const routes: Route[] = [
   },
   {
     name: "Our Branches",
-    href: "#section4",
-    subRoutes: [{ name: "Find Us", href: "#section4" }],
+    href: "/#section4",
+    subRoutes: [{ name: "Find Us", href: "/#section4" }],
   },
 ];
 
@@ -60,7 +60,6 @@ export default function Navigation() {
       <ul className="flex justify-start space-x-8 items-center m-0 p-0">
         {routes.map((route, index) => (
           <li key={`${route.name}-${route.href}`} className="relative">
-            {/* Wrap both link and dropdown in one group to retain hover state */}
             <div
               className="group"
               onMouseEnter={() => setOpenIndex(index)}

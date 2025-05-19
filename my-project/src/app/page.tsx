@@ -191,10 +191,10 @@ export default function Page() {
           </Marquee>
         </div>
 
-        <section id="section3" className="min-h-screen bg-fuchsia-50">
+        <section id="section3" className="min-h-screen bg-purple-100">
           <div className="relative w-full h-[600px]">
             <Image
-              src="/hawa.png"
+              src="/hawa1.png"
               alt="contact"
               fill
               className="object-cover rounded-xl"
@@ -204,17 +204,17 @@ export default function Page() {
           </div>
 
           <div className="bg-white text-orange-300 text-3xl font-light w-full md:w-1/2 mx-auto mt-10 p-6 rounded-xl shadow-lg">
-            <p className="text-red-950 font-unbounded text-center text-4xl mb-4">Contact Us</p>
+            <p className="text-red-950  text-center text-4xl mb-4">Contact Us</p>
             <h1 className="text-center text-base text-gray-700 mb-6">
               Please fill out the form below and one of our school representatives will contact you soon.
             </h1>
 
             <form className="space-y-4">
-              <input type="text" placeholder="Enter your First Name" className="w-full px-4 py-3 rounded-xl border border-purple-400 text-black outline-none text-xl font-unbounded" />
-              <input type="text" placeholder="Enter your Middle Name" className="w-full px-4 py-3 rounded-xl border border-purple-400 text-black outline-none text-xl font-unbounded" />
-              <input type="tel" placeholder="Enter your Phone Number" className="w-full px-4 py-3 rounded-xl border border-purple-400 text-black outline-none text-xl font-unbounded" />
-              <input type="text" placeholder="Enter your Address" className="w-full px-4 py-3 rounded-xl border border-purple-400 text-black outline-none text-xl font-unbounded" />
-              <button type="submit" className="w-1/4 mt-4 bg-yellow-700 hover:bg-green-700 text-white font-semibold py-3  text-xl rounded-xl font-unbounded m-0">
+              <input type="text" placeholder="Enter your First Name" className="w-full px-4 py-3 rounded-xl border border-purple-400 text-black outline-none text-xl " />
+              <input type="text" placeholder="Enter your Middle Name" className="w-full px-4 py-3 rounded-xl border border-purple-400 text-black outline-none text-xl " />
+              <input type="tel" placeholder="Enter your Phone Number" className="w-full px-4 py-3 rounded-xl border border-purple-400 text-black outline-none text-xl " />
+              <input type="text" placeholder="Enter your Address" className="w-full px-4 py-3 rounded-xl border border-purple-400 text-black outline-none text-xl " />
+              <button type="submit" className="w-1/4 mt-4 bg-yellow-700 hover:bg-green-700 text-white font-semibold py-3  text-sm rounded-xl font-open-sans m-0">
                 Submit
               </button>
             </form>
@@ -222,7 +222,6 @@ export default function Page() {
         </section>
 
         <br /> <br />
-        <div className="w-full h-px bg-black mb-4"></div> 
       </section>
     </div>
   );

@@ -21,8 +21,8 @@ const Footer = () => {
         </div>
 
         <div className="flex items-start justify-between gap-28 ml-[200px] w-full">
-          <div className="text-left text-2xl  font-serif">
-            <h1 className="text-xl  text-gray-800 font-serif ">Zee Learning Limited</h1>
+          <div className="text-left text-l font-serif">
+            <h1 className="text-l text-gray-800 font-serif ">Zee Learning Limited</h1>
             <p>135, Continental Building, B wing, Worli,</p>
             <p>Dhumbarahi, Kathmandu 4</p>
             <p>Mumbai, Maharashtra 400 018</p>
